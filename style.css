@@ -32,6 +32,21 @@ p {
   font-size: 16px;
 }
 
+section {
+  background-color: rgb(234, 231, 220);
+}
+
+.title {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+}
+
+.orange {
+  color: rgb(232, 90, 79);
+}
+
 a {
   text-decoration: none;
   position: relative;
@@ -89,9 +104,6 @@ li {
   padding: 0 12px;
 }
 
-.text--green {
-  color: #116466;
-}
 
 section:nth-child(even) {
   background: color #f8f8f8;
@@ -103,19 +115,62 @@ section:nth-child(even) {
 
 /* 
 
+LANDING PAGE
+
+*/
+#landing-page {
+  min-height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.header__para {
+  font-size: 24px;
+  line-height: 2;
+  max-width: 450px;
+}
+
+.social__list {
+  margin-top: 16px;
+  display: flex;
+}
+
+.social__link {
+  background-color: #e85a4f;
+  color: white;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* 
+
 NAVIGATION BAR 
 
 */
 
 nav {
-  height: 100px;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100px;
 }
 
 #personal-logo {
@@ -133,7 +188,6 @@ nav {
 }
 
 .nav__link--anchor {
-  text-decoration: none;
   font-size: 16px;
   color: #242424;
   font-weight: 700;
