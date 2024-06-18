@@ -1,3 +1,19 @@
+let isModalOpen = false;
+let contrastToggle = false; 
+
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+
+}
+
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector(".modal__overlay--loading");
@@ -22,7 +38,7 @@ function contact(event) {
       });
   }
 
-let isModalOpen = false;
+
 function toggleModal() {
     if (isModalOpen) {
         isModalOpen = false;
@@ -32,13 +48,6 @@ function toggleModal() {
     document.body.classList += " modal--open";
 }
 
-//   function toggleModal() {
-//     if (isModalOpen) {
-//       isModalOpen = false;
-//       return document.body.classList.remove("modal--open");
-//     }
-//     isModalOpen = true;
-//     document.body.classList += " modal--open";
-//   }
+
 
 
